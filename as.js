@@ -95,7 +95,7 @@ var sections = [
     "( vedd fel a telefooooont )",
 ];
 
-connectors = [
+var connectors = [
     "amúgy",
     "azaz",
     "azonban",
@@ -127,17 +127,23 @@ connectors = [
     "viszont",
 ];
 
+var prng;
+
+$( document ).ready(function() {
+    prng = new Math.seedrandom();
+});
+
 $(function() {
 
     function mix() {
-        $("#content").text(
+        $("#content").html(
             "No, Urak, elmondom, hogy " +
-            sections[Math.floor(Math.random() * sections.length)] + ", " +
-            connectors[Math.floor(Math.random() * connectors.length)] + " " +
-            sections[Math.floor(Math.random() * sections.length)] + ", " +
-            connectors[Math.floor(Math.random() * connectors.length)] + " " +
-            sections[Math.floor(Math.random() * sections.length)] + "." +
-            "\n\nNa, innen már menni fog, nem?"
+            sections[Math.floor(prng() * sections.length)] + ", " +
+            connectors[Math.floor(prng() * connectors.length)] + " " +
+            sections[Math.floor(prng() * sections.length)] + ", " +
+            connectors[Math.floor(prng() * connectors.length)] + " " +
+            sections[Math.floor(prng() * sections.length)] + ". " +
+            "<br/><br/>Na, innen már menni fog, nem?"
         );
     };
 
