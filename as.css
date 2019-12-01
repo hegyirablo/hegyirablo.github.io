@@ -18,7 +18,7 @@ body {
     border-width: 2px;
     border-radius: 10px;
     background: #000000;
-    background: -webkit-linear-gradient(to left, #212121, #000000);
-    background: linear-gradient(to left, #212121, #000000);
+    background: -webkit-linear-gradient(to left, #323232, #000000);
+    background: linear-gradient(to left, #323232, #000000);
     box-shadow: 5px 6px 8px rgba(0, 0, 0, .5);
 }
