@@ -73,7 +73,7 @@ var sections = [
     "tapossátok a lelküket",
     "ti szeretitek azt a helyet (?)",
     "tolni kéne",
-    "tudnék szerezni, de akkor kirúgnák",
+    "tudnék szerezni, de akkor kirúgnának",
     "téged még ellenőrizni kell",
     "túl gyorsan akartam mondani",
     "valakinek biztos mondtam",
